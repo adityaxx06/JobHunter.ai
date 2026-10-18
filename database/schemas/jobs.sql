@@ -1,0 +1,2 @@
+-- Canonical jobs table placeholder — no DDL yet. See docs/job-schema.md.
+-- Planned: jobs(id, source, title, company, location, apply_url, scores...)

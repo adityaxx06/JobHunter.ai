@@ -1,0 +1,1 @@
+-- 001_init placeholder — no DDL yet. See docs/job-schema.md.
