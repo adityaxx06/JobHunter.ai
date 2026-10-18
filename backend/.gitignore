@@ -1,0 +1,6 @@
+# Keep env out of git. See ../../.env.example
+.env
+.env.local
+__pycache__/
+.pytest_cache/
+.venv/
