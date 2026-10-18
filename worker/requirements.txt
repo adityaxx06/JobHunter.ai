@@ -1,0 +1,6 @@
+# Worker runtime/test dependencies (Phase 8 reproducibility).
+# The worker is stdlib-first; only PostgreSQL access and tests need packages.
+# psycopg is imported lazily (offline paths never require it).
+psycopg[binary]==3.3.6
+psycopg-pool==3.3.3
+pytest==9.1.1

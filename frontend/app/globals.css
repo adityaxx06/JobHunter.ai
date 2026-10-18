@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-ink-950 text-zinc-100 font-sans antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Accessible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid #7c6cff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Subtle scrollbars for scrollable panes */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2b2b31 transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #2b2b31;
+  border-radius: 8px;
+}
+
+/* Skeleton shimmer surface */
+.skeleton {
+  background: linear-gradient(90deg, #18181b 25%, #232327 50%, #18181b 75%);
+  background-size: 800px 100%;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

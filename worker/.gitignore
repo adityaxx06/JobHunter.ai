@@ -1,0 +1,5 @@
+# Worker ignores — packages NOT installed yet
+__pycache__/
+.venv/
+.env
+*.log

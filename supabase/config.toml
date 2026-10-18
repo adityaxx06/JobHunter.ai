@@ -1,0 +1,29 @@
+# Supabase CLI config (Phase 2 — minimal; CLI not installed locally).
+# Generated manually because `supabase` CLI is unavailable on this machine.
+# Once the CLI is installed, run `supabase init`/`supabase link` in this repo
+# and let it expand this file. Nothing here connects to any remote project.
+# Docs: https://supabase.com/docs/guides/cli
+
+project_id = "ai-jobhunter"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[studio]
+enabled = true
+port = 54323
+
+# Migrations in ./migrations are applied in lexicographic order:
+#   001_initial_schema.sql — 12 tables, indexes, RLS, updated_at triggers.

@@ -1,0 +1,13 @@
+# Pinned known-good set (Phase 8 reproducibility). Verify with a clean
+# install + pytest before changing any version. No unpinned ranges.
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+psycopg[binary]==3.3.6
+psycopg-pool==3.3.3
+supabase==2.32.0
+httpx==0.28.1
+pytest==9.1.1
+python-multipart==0.0.32
+pymupdf==1.28.2
