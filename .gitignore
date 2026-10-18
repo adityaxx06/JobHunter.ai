@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+*.egg-info/
+
+# Node / Next.js (frontend/)
+node_modules/
+.next/
+out/
+dist/
+*.local
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Supabase / DB
+supabase/.branches/
+supabase/.temp/
+
+# Misc
+*.tmp
+*.log
